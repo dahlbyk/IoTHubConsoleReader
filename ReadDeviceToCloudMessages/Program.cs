@@ -11,7 +11,8 @@ namespace ReadDeviceToCloudMessages
     {
         static void Main(string[] args)
         {
-            string connectionString = "HostName=YOURHUBNAME.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=YOURSECRETOKENqffPEGwfxnDgWNRFZ400=";
+
+            string connectionString = "HostName=mvp-iot-central.azure-devices.net;SharedAccessKeyName=mvp-central;SharedAccessKey=lD3xViVpbdxWIeXNybrAi/HYpJnCGJtBQCzax/36QUc=";
             string iotHubD2cEndpoint = "messages/events";
 
             var eventHubClient = EventHubClient.CreateFromConnectionString(connectionString, iotHubD2cEndpoint);
